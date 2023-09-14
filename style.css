@@ -93,8 +93,7 @@ body{
     #search{
         width: 85vw;
     }
-
-    }
+ }
 @media (max-width:900px){
 
     .movies{
@@ -108,6 +107,9 @@ body{
         padding-block:25px;
 
     }
+
+
+}
    
 .movie-card{
     height: 350px;
