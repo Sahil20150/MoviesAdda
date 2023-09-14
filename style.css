@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Lobster&family=Ubuntu+Condensed&display=swap');
+:root {
+
+
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
+   
+
+    /**
+     * colors
+     */
+    
+    --cadet-blue-crayola: hsl(227, 13%, 73%);
+    --maximum-yellow-red: hsl(41, 95%, 61%);
+    --medium-sea-green: hsl(142, 43%, 54%);
+    --blue-crayola_10: hsla(222, 100%, 61%, 0.05);
+    --smocky-black_30: hsla(0, 0%, 6%, 0.3);
+    --eerie-black-1: hsl(240, 5%, 8%);
+    --eerie-black-2: hsl(228, 9%, 10%);
+    --raisin-black: hsl(225, 15%, 16%);
+    --blue-crayola: hsl(222, 100%, 61%);
+    --roman-silver: hsl(223, 10%, 52%);
+    --presian-red: hsl(0, 64%, 52%);
+    --gunmetal_50: hsla(230, 16%, 22%, 0.5);
+    --gainsboro: hsl(0, 0%, 85%);
+    --cultured: hsl(0, 0%, 93%);
+    --white_50: hsla(0, 0%, 100%, 0.5);
+    --white_30: hsla(0, 0%, 100%, 0.3);
+    --white_10: hsla(0, 0%, 100%, 0.1);
+    --black_10: hsla(0, 0%, 0%, 0.1);
+    --white: hsl(0, 0%, 100%);
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var( --eerie-black-1);
+}
+.main{
+    width: 100vw;
+    height: 100%;
+    
+}
+.find{
+    width: 100vw;
+    height: 7vh;
+    background-color:var(  --presian-red) ;
+    display: flex;
+    justify-content: center;
+    padding-block: 5vh;
+    align-items: center;
+    margin-bottom: 2.5vh;
+
+}
+#search{
+    height: 4.8vh;
+    width: 40vw;
+    outline: none;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    border-radius: 30px;
+    padding-inline: 8px;
+    
+    outline: none;
+    border: none;
+}
+#search:focus{
+    filter: drop-shadow(4px 6px 2px #3e3b3b);
+    border: none;
+    transform: scale(1.001);
+}
+.movies{
+    width: 100vw;
+    height: 100%;
+    background-color: var(--eerie-black-2);
+    display: flex;
+    gap: 4vw;
+    flex-wrap: wrap;
+    padding-inline: 3vw;
+    padding-block: 4vh;
+}
+@media (max-width:700px){
+
+    .movies{
+        justify-content: center;
+    }
+    #search{
+        width: 85vw;
+    }
+
+    }
+   
+.movie-card{
+    height: 350px;
+    width: 300px;
+    background-color: var( --eerie-black-1);
+    filter: drop-shadow(4px 6px 5px #333);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+
+}
+.movie-poster,.movie-poster img{
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    width: 100%;
+    height: 55%;
+    background-color: white;
+    color: black;
+    transform: translateY(190%);
+    padding: 8px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.movie-card:hover .overlay{
+  transform: translateY(90%);
+  z-index: 99 !important;
+  opacity: 1;
+  transition: all 1s;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 7px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.detail{
+  text-align: justify;
+font-size: 11px;
+font-weight: bold;
+
+
+ 
+}
+.green{
+  color: green;
+   
+    
+}
+.orange{
+  color: orange;
+   
+}
+.red{
+  color: red;
+  
+}
