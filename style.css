@@ -95,6 +95,16 @@ body{
     }
 
     }
+@media (max-width:900px){
+
+    .movies{
+        justify-content: center;
+    }
+    #search{
+        width: 65vw;
+    }
+
+    }
    
 .movie-card{
     height: 350px;
